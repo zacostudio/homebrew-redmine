@@ -1,23 +1,23 @@
 class Redmine < Formula
   desc "Standalone CLI for Redmine"
   homepage "https://github.com/zacostudio/redmine-cli"
-  version "0.4.1"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/zacostudio/redmine-cli/releases/download/v#{version}/redmine-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "67f59bf214df1b93dec19964a93fee9cde36b0252e2452f48f44869d5bdce925"
+      sha256 "1cae1eabc56dc787715b83daf72c96ccacb8f9d4a774baca17e3ac8e957290d0"
     end
     on_intel do
       url "https://github.com/zacostudio/redmine-cli/releases/download/v#{version}/redmine-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "57d90e275d3922f0a75a623fe8747a9b97f3e753d0d0b11e09897d4deab303f9"
+      sha256 "1369ca36dc164f97d370cc013731e18f026e95f1444f65b9d24c29185f625cef"
     end
   end
 
   on_linux do
     url "https://github.com/zacostudio/redmine-cli/releases/download/v#{version}/redmine-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "7863fe904f901b3c8b8e28c8eaec796f1d2895ac73050ab0048149eb02f50c37"
+    sha256 "3025c587034f1d5b7715935b72d45a1da0d235af3b2fde8187acf758a00c764d"
   end
 
   def install
